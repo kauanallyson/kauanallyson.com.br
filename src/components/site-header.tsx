@@ -23,9 +23,6 @@ export function SiteHeader() {
 					href="/"
 					className="flex items-center gap-2 font-semibold tracking-tight"
 				>
-					<span className="flex size-7 items-center justify-center rounded-md bg-foreground text-xs font-bold text-background">
-						KA
-					</span>
 					<span className="text-lg">{site.shortName}</span>
 				</Link>
 
