@@ -99,6 +99,9 @@ No GitHub → repo → Settings → Secrets and variables → Actions → **New 
 | `SSH_USER` | `ubuntu`                                                     |
 | `SSH_KEY`  | conteúdo de `~/.ssh/kauanallyson_deploy` (chave **privada**) |
 
+Em **Variables** (mesma tela, aba ao lado) crie `DEPLOY_ENABLED` = `true`.
+Sem essa variável o job de deploy é pulado e só o CI roda.
+
 Pronto: cada push na `main` roda Biome + build e, se passar, atualiza o servidor.
 
 ## Comandos úteis

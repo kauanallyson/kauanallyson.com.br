@@ -25,7 +25,8 @@ jobs:
 
   deploy:
     needs: check
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    # Turn on by setting the repository variable DEPLOY_ENABLED=true (see deploy/README.md).
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.DEPLOY_ENABLED == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Pull and rebuild on the OCI server
