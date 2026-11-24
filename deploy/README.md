@@ -73,7 +73,7 @@ Let's Encrypt falha a validação.
 ## 6. Primeiro deploy (manual)
 
 ```bash
-git clone https://github.com/kauanallyson/kauanallyson.git ~/kauanallyson
+git clone https://github.com/kauanallyson/kauanallyson.com.br.git ~/kauanallyson
 cd ~/kauanallyson
 cp deploy/.env.example .env   # confira DOMAIN e ACME_EMAIL
 docker compose up -d --build
